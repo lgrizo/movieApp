@@ -10,6 +10,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <link href="https://fonts.cdnfonts.com/css/fxno-w" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
@@ -18,13 +24,52 @@
   <body>
     <div class="container">
       <header>
-        <h1>Find your <span class="gradient-text">favorite</span> movie.</h1>
-
-        <input type="text" />
-        <button class="searchBtn">
-          <i class="fa-solid fa-magnifying-glass fa-xl" aria-hidden="true"></i>
-        </button>
+        <h1>FIND YOUR <span class="gradient-text">FAVORITE</span> MOVIE.</h1>
       </header>
+
+      <input type="text" id="movie-search-box" onkeyup="findMovies()" />
+      <button
+        type="submit"
+        class="searchBtn"
+        id="search"
+        onclick="searchClick()"
+      >
+        <i class="fa-solid fa-magnifying-glass fa-xl" aria-hidden="true"></i>
+      </button>
+      <div class="result-grid">
+        <div class="movie-card">
+          <img class="movie-cover" src="/img/Avatar cover.jpeg" alt="" />
+          <h3 class="movie-title">Guardians of the Galaxy Vol. 2</h3>
+        </div>
+        <div class="movie-card">
+          <img class="movie-cover" src="/img/Avatar cover.jpeg" alt="" />
+          <h3 class="movie-title">Avatar</h3>
+        </div>
+        <div class="movie-card">
+          <img class="movie-cover" src="/img/Avatar cover.jpeg" alt="" />
+          <h3 class="movie-title">Avatar</h3>
+        </div>
+        <div class="movie-card">
+          <img class="movie-cover" src="/img/Avatar cover.jpeg" alt="" />
+          <h3 class="movie-title">Avatar</h3>
+        </div>
+        <div class="movie-card">
+          <img class="movie-cover" src="/img/Avatar cover.jpeg" alt="" />
+          <h3 class="movie-title">Avatar</h3>
+        </div>
+        <div class="movie-card">
+          <img class="movie-cover" src="/img/Avatar cover.jpeg" alt="" />
+          <h3 class="movie-title">Avatar</h3>
+        </div>
+        <div class="movie-card">
+          <img class="movie-cover" src="/img/Avatar cover.jpeg" alt="" />
+          <h3 class="movie-title">Avatar</h3>
+        </div>
+        <div class="movie-card">
+          <img class="movie-cover" src="/img/Avatar cover.jpeg" alt="" />
+          <h3 class="movie-title">Avatar</h3>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

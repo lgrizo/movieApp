@@ -1,22 +1,34 @@
 body {
    background: #333333;
-   font-family: 'FX Logo', sans-serif;
+   /* font-family: 'FX Logo', sans-serif; */
+   font-family: 'Nunito', sans-serif;
+font-family: 'Varela Round', sans-serif;
                                                 
-}
-
-h1 {
-    color: white;
-    font-size: 3rem;
 }
 
 .container {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1200px;
     text-align: center;
     margin: auto;
     margin-top: 100px;
-    
 }
+
+/* Main header section */
+
+h1 {
+    color: white;
+    font-size: 2.8rem;
+}
+
+h3 {
+    color: white;
+    font-size: 1rem;
+    margin: 10px 0 0 0;
+    text-transform: uppercase
+}
+
+/* Changes "Favorite" text to a gradient */
 
 .gradient-text {
     background-image: linear-gradient(45deg, #d41044, #f89f03);
@@ -27,12 +39,14 @@ h1 {
     -moz-text-fill-color: transparent;
 }
 
+/* Input box section */
+
 input {
     width: 50%;
     height: 30px;
     background-color: #222222;
     border: 1px solid rgba(255, 255, 255, 0.562);
-    border-radius: 20px;
+    border-radius: 5px;
     padding-left: 15px;
 }
 
@@ -41,7 +55,7 @@ input:focus {
 }
 
 input[type=text]{
-    color: white;
+    color: rgba(255, 255, 255, 0.616);
 }
 
 .fa-magnifying-glass {
@@ -49,7 +63,31 @@ input[type=text]{
 }
 
 .searchBtn {
+    width: 35px;
     height: 35px;
     background: #333333;
     border: none;
+    border-radius: 5px;
 }
+
+.searchBtn:hover {
+    background: rgba(0, 0, 0, 0.116);
+    cursor: pointer;
+}
+
+/* Movie Results Grid Section */
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+.movie-card {
+    margin-top: 80px;
+}
+
+.movie-cover {
+    width: 200px;
+}
+
