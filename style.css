@@ -1,9 +1,6 @@
 body {
-   background: #333333;
-   /* font-family: 'FX Logo', sans-serif; */
-   font-family: 'Nunito', sans-serif;
-font-family: 'Varela Round', sans-serif;
-                                                
+   background: #333333; 
+   font-family: 'Lato', sans-serif;                                
 }
 
 .container {
@@ -11,7 +8,7 @@ font-family: 'Varela Round', sans-serif;
     max-width: 1200px;
     text-align: center;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 /* Main header section */
@@ -19,11 +16,12 @@ font-family: 'Varela Round', sans-serif;
 h1 {
     color: white;
     font-size: 2.8rem;
+    font-family: 'fx logo'
 }
 
 h3 {
     color: white;
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 10px 0 0 0;
     text-transform: uppercase
 }
@@ -84,10 +82,15 @@ input[type=text]{
 }
 
 .movie-card {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .movie-cover {
     width: 200px;
 }
 
+
+/* js related classes */
+.hide-result-grid {
+    display: none;
+}
