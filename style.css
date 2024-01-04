@@ -26,6 +26,13 @@ h3 {
     text-transform: uppercase
 }
 
+h4 {
+    color: white;
+    font-size: 1 rem;
+    margin: 10px 0 0 0;
+    text-transform: uppercase
+}
+
 /* Changes "Favorite" text to a gradient */
 
 .gradient-text {
