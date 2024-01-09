@@ -89,6 +89,11 @@ input[type=text]{
 img {
     width: 280px;
     height: 400px;
+   
+}
+
+img:hover {
+    cursor: pointer; 
 }
 
 

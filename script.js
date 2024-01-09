@@ -1,12 +1,13 @@
 const movieSearchBox = document.getElementById("movie-search-box");
+const searchBtn = document.querySelector("i");
 
 function findMovies() {
   const searchTerm = movieSearchBox.value;
   const resultsGrid = document.getElementById("result-grid");
-  // if (searchTerm.length > 2) {
   fetch(`http://www.omdbapi.com/?s=${searchTerm}*&apikey=dd3f37db`)
     .then((response) => response.json())
     .then((movieResults) => {
+      resultsGrid.innerHTML = "";
       movieResults.Search.forEach((movie) => {
         const movieCard = document.createElement("div");
         movieCard.classList.add("movie-card");
@@ -32,4 +33,3 @@ function findMovies() {
     })
     .catch((error) => console.log(error));
 }
-// }
